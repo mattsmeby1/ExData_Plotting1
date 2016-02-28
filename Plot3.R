@@ -36,7 +36,7 @@ hpc <- hpc[hpc$Date %in% date1:date2, ]
 ## And finally we transform the DateTime variable into Date class as well
 hpc$DateTime <- strptime(hpc$DateTime, format = "%Y-%m-%d:%H:%M:%S", tz = "")
 
-## HERE IS OUR PLOT (plot 1):
+## HERE IS OUR PLOT (plot 3):
 
 plot(hpc$DateTime, hpc$Sub_metering_1, type = "l", xlab = "", ylab = "Energy Sub Metering")
 lines(hpc$DateTime, hpc$Sub_metering_2, type = "l", col = "red")
